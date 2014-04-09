@@ -20,8 +20,7 @@ public class easy_DashInsert {
 		return s.toString();
 	}
 	
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println( function( scan.nextInt() ) );
+	public static void main(String[] args) { //Don't have to cache the scanner if only using it once
+		System.out.println( function( new Scanner(System.in).nextInt() ) );
 	}
 }
