@@ -6,14 +6,15 @@ import java.util.Scanner;
 public class Easy_ExOh {
 	
 	public static boolean function(String input){
+		//set initial values inside hashmap
 		Map<String, Integer> map = new HashMap<String, Integer>();
-		map.put("x", 0);//set initial values inside hashmap
+		map.put("x", 0);
 		map.put("o", 0);
-		for(char val : input.toCharArray()){//iterate through the string
-			String x = String.valueOf(val).toLowerCase(); //converting each character to lower case
-			map.put(x, map.get(x) + 1);//and incrementing its value inside the map
+		for(char val : input.toCharArray()){
+			String x = String.valueOf(val).toLowerCase();
+			map.put(x, map.get(x) + 1);
 		}
-		return map.get("x") == map.get("o");//find out if the x and o values are equal
+		return map.get("x") == map.get("o");
 	}
 
 	public static void main(String[] args) {
