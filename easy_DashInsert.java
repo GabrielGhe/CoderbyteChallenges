@@ -10,7 +10,7 @@ public class easy_DashInsert {
 		
 		while(input != 0){ //go through the integer backwards creating the string
 			int temp = input % 10;  //cache first digit
-			input = input / 10;		//remove first digit
+			input = input / 10;	//remove first digit
 			second = (temp % 2 != 0);//find out if temp is odd
 			
 			if(first && second) s.insert(0, "-");
