@@ -10,7 +10,6 @@ public class easy_ABCheck {
 	}
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println( method( scan.nextLine() ) );
+		System.out.println( method( new Scanner(System.in).nextLine() ) );
 	}
 }
